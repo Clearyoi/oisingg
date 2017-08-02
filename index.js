@@ -19,7 +19,7 @@ app.get('/:name', (request, response) => {
 	profile.name = request.params['name']
 	console.log(profile.name)
 	console.log(config["key"])
-	riot.makeCall(profile, printResult) 
+	riot.generateProfile(profile, printResult) 
 	globalresponse = response
   
 })

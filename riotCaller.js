@@ -14,7 +14,7 @@ var options = {
     }
 }
 
-exports.makeCall = function(profile, onResult){
+exports.generateProfile = function(profile, onResult){
 	options.path = '/lol/summoner/v3/summoners/by-name/' + profile.name;
 	console.log(options.path)
 	summonerCall(profile, onResult)
